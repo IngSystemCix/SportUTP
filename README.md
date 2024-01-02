@@ -13,6 +13,8 @@ Esta página fue creada para eventos deportivos para el uso las olimpiadas de la
 👉🏻 Java
 <br>
 👉🏻 HTML5
+<br>
+👉🏻 Transact-SQL
 
 ## ✍🏻 Tecnología
 
