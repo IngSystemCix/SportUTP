@@ -1,0 +1,17 @@
+{
+  "name": "deport_utp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/main/resources/static/css/tailwind_input.css -o ./src/main/resources/static/css/tailwind_output.css --watch",
+    "sass": "sass --watch ./src/main/resources/static/sass/main.scss:./src/main/resources/static/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

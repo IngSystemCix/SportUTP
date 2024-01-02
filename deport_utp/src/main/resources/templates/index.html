@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      th:href="@{https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css}"
+    />
+    <link
+      rel="shortcut icon"
+      th:href="@{/icon/favicon.ico}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" th:href="@{/css/tailwind_output.css}" />
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+    <title>Sport UTP | Iniciar sesición</title>
+  </head>
+  <body class="h-lvh">
+    <div
+      class="fixed w-full h-full flex justify-center items-center z-10 invisible"
+      id="popup"
+    >
+      <!-- popup (ventana emergente) -->
+      <div
+        class="bg-stone-900 dark:bg-white flex flex-col justify-center items-center rounded-lg w-[30rem] h-[13rem] gap-3"
+      >
+        <div class="flex justify-end items-start w-full pr-5 mt-0">
+          <i
+            class="bi bi-x text-white dark:text-black cursor-pointer text-[36px]"
+            id="close"
+          ></i>
+        </div>
+        <p class="text-white dark:text-black">
+          Bienvenido, haz iniciado de manera correcta.
+        </p>
+        <input
+          type="button"
+          value="Continuar"
+          class="text-white bg-green-800 hover:bg-green-600 cursor-pointer rounded-md p-3 mb-3"
+          id="continuar"
+        />
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col h-full bg-white dark:bg-slate-900 z-0"
+      id="contenedor_principal"
+    >
+      <div class="flex h-16 justify-end items-center p-3">
+        <!-- Toggle para modo Oscuro o claro -->
+        <span
+          class="bg-slate-950 dark:bg-slate-100 rounded-full w-10 h-6 flex items-center transition-transform duration-300 ease-in-out transform cursor-pointer p-1"
+          id="toggle__oscuro_claro"
+        >
+          <span
+            class="handle w-5 h-5 bg-white dark:bg-slate-950 rounded-full shadow-md flex justify-center items-center"
+          >
+            <i
+              class="bi bi-brightness-high font-bold text-black absolute"
+              id="sun"
+            ></i>
+            <i
+              class="bi bi-moon font-bold text-black dark:text-white absolute text-transparent"
+              id="moon"
+            ></i>
+          </span>
+        </span>
+      </div>
+
+      <div class="flex justify-center items-center p-5 h-full">
+        <!-- Fourmulario de inicio de sesión -->
+        <form
+          class="flex flex-col rounded-lg bg-slate-300 dark:bg-gray-800 p-3 w-96 shadow-lg"
+          id="formulario"
+        >
+          <div class="w-full flex justify-center items-center">
+            <i
+              class="bi bi-person-bounding-box text-[74px] text-slate-800 dark:text-white"
+            ></i>
+          </div>
+          <div class="w-full p-3 flex flex-col gap-2">
+            <label for="codigo" class="text-black font-bold dark:text-white"
+              >Código</label
+            >
+            <div class="flex flex-col gap-0">
+              <div class="flex flex-row items-center">
+                <input
+                  type="text"
+                  name="codigo"
+                  id="codigo"
+                  class="bg-transparent rounded-md outline-none caret-black dark:caret-white text-black font-bold p-3 dark:text-white w-full"
+                  placeholder="U12345678"
+                  required
+                />
+                <i
+                  class="bi bi bi-x-lg text-black dark:text-white cursor-pointer"
+                  style="display: none"
+                  id="clear"
+                ></i>
+              </div>
+              <hr class="border-white h-1" />
+            </div>
+            <label for="pass" class="text-black font-bold dark:text-white"
+              >Contraseña</label
+            >
+            <div class="flex flex-col gap-0">
+              <div class="flex flex-row items-center">
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass"
+                  class="bg-transparent rounded-md outline-none caret-black dark:caret-white text-black font-bold p-3 dark:text-white w-full"
+                  placeholder="••••••••••••••••••••••••"
+                  required
+                />
+                <i
+                  class="bi bi-eye-slash text-black dark:text-white cursor-pointer"
+                  style="display: none"
+                  id="ojo"
+                ></i>
+              </div>
+              <hr class="border-white h-1" />
+            </div>
+          </div>
+          <div class="w-full flex flex-col justify-center items-center p-3">
+            <button
+              type="submit"
+              class="w-full rounded-md bg-green-800 hover:bg-green-600 text-white font-bold p-3"
+            >
+              <i class="bi bi-box-arrow-in-left"></i>
+              Inciar sesión
+            </button>
+          </div>
+        </form>
+      </div>
+      <footer class="flex justify-center items-center p-3 h-24" id="footer">
+        <small
+          class="text-slate-300 hover:text-white dark:text-black dark:hover:text-slate-600 cursor-pointer font-bold"
+          id="div__marca"
+          title="Autor: Juan Bladimir Romero Collazos"
+        ></small>
+      </footer>
+    </div>
+    <script th:src="@{/js/main.js}"></script>
+  </body>
+</html>
