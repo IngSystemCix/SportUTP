@@ -1,11 +1,5 @@
 # Sport UTP
 
- _______                _______                __                     ______  __
-|_     _|.-----..-----.|     __|.--.--..-----.|  |_ .-----..--------.|      ||__|.--.--.
-_|   |_ |     ||  _  ||__     ||  |  ||__ --||   _||  -__||        ||   ---||  ||_   _|
-|_______||__|__||___  ||_______||___  ||_____||____||_____||__|__|__||______||__||__.__|
-                |_____|         |_____|
-
 ## ✍🏻 Desarrollador
 
 👉🏻 Juan Bladimir Romero Collazos **(Front-end | Back-end)**
@@ -14,4 +8,20 @@ _|   |_ |     ||  _  ||__     ||  |  ||__ --||   _||  -__||        ||   ---||  |
 
 Esta página fue creada para eventos deportivos para el uso las olimpiadas de la UTP **(Universidad Tecnológica del Perú)**
 
-## ✍🏻 
+## ✍🏻 Lenguajes de Programación
+
+👉🏻 Java
+👉🏻 HTML5
+
+## ✍🏻 Tecnología
+
+👉🏻 Spring Boot
+
+## ✍🏻 preprocesador de CSS
+
+👉🏻 SASS
+
+## ✍🏻 marco de diseño de CSS
+
+👉🏻 Tailwind
+👉🏻 Bootstrap **(Iconos)**
