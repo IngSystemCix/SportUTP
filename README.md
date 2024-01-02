@@ -27,3 +27,7 @@ Esta página fue creada para eventos deportivos para el uso las olimpiadas de la
 👉🏻 Tailwind
 <br>
 👉🏻 Bootstrap **(Iconos)**
+
+## ✍🏻 Derechos de autor
+
+👉🏻 © IngSystemCix 2020 - 2024
